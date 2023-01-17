@@ -15,7 +15,9 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Huu-api'),
+    'author' => env('APP_AUTHOR', 'huu'),
+
 
     /*
     |--------------------------------------------------------------------------
