@@ -24,6 +24,17 @@ Route::get('/me', [App\Http\Controllers\AuthController::class, 'me']);
 Route::post('/logout', [App\Http\Controllers\AuthController::class, 'logout']);
 
 
+// api task
+Route::get('/tasks', [App\Http\Controllers\TaskController::class, 'index']);
+Route::post('/tasks', [App\Http\Controllers\TaskController::class, 'store']);
+Route::get('/tasks/{id}', [App\Http\Controllers\TaskController::class, 'show']);
+Route::put('/tasks/{id}', [App\Http\Controllers\TaskController::class, 'update']);
+Route::delete('/tasks/{id}', [App\Http\Controllers\TaskController::class, 'destroy']);
+
+
+
+
+
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
